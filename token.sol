@@ -205,8 +205,8 @@ contract Nuvion is Context, IERC20, Ownable {
 
     uint256 public _NuvionBuy = 5;
     uint256 public _NuvionSell = 5;
-    // address payable public _NuvionWallet =payable(0xeB3F1C719001e4d60b2bc076a4e7D94b5D8b997a);
-    address payable public _NuvionWallet =payable(0xabD2BA0A0F03B9be92CbCBA451bc392267DE2391);
+    address payable public _NuvionWallet =payable(0xeB3F1C719001e4d60b2bc076a4e7D94b5D8b997a);
+
 
     IUniswapV2Router02 private uniswapV2Router;
     address private uniswapV2Pair;
@@ -224,8 +224,7 @@ contract Nuvion is Context, IERC20, Ownable {
 
     constructor() {
         IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(
-            // 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
-            0xD99D1c33F9fC3444f8101754aBC46c52416550D1
+            0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
         ); // mainnet router address
         // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1); // test router address
 
